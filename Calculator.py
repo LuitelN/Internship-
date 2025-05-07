@@ -2,6 +2,7 @@ x = float(input("Enter the first number: "))
 y = float(input("Enter the second number:"))
 Operation = input("Enter the operation (+,-,/,*):")
 
+
 def add_num(num1, num2):
     result = num1 + num2
     x = round(result, 4)
