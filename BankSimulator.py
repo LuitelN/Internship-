@@ -7,8 +7,7 @@ class User:
 
     def deposit(self, amount):
         self.balance += amount
-        print(f"{amount} deposited."
-              )
+        print(f"{amount} deposited.")
     def withdraw(self, amount):
         if amount > self.balance:
             print("Insufficient Balance.")
