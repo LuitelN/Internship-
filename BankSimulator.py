@@ -4,6 +4,17 @@ class User:
         self.number = Account_Number
         self.balance = Balance 
 
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"{amount} deposited."
+              )
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficient Balance.")
+        else: 
+            self.balance -= amount
+            print(f"{amount} withdrawn.")
+
 
 
 u1 = User("A", 1 , 10000 )
@@ -13,17 +24,34 @@ u4 = User("D", 4 , 50000 )
 u5 = User("E", 5 , 15000 )
 
 accounts = {1: u1, 2: u2, 3: u3, 4: u4, 5: u5}
+
 result = int(input("Enter the account number: "))
 user = accounts.get(result)
 
 
-#dict:
-# kwy, values,items, get, read, update, create
+#print(accounts.items())
+#dict: key, values,items, get, read, update, create
 
 if user: 
     print("Account Holder:", user.name, "\nAccount Number:", user.number, "\nAccount Balance: ", user.balance)
+    action = input("Do you want to Deposit or Withdraw?")
+
+    if action == "deposit":
+        amount = float(input("Enter the deposit amount: "))
+        user.deposit(amount)
+
+    elif action == "withdraw":
+        amount = float(input("Enter the withdraw amount: "))
+        user.withdraw(amount)
+
 else:
-    print("User not found.")
+    print("Invalid Action")
+
+    print("\nUpdated Account Information:")
+    print("Account Holder:", user.name, "\nAccount Number:", user.number, "\nAccount Balance:", user.balance)
+
+
+
 
 
 # print("Account Holder:", u1.name, "\nAccount Number:", u1.number, "\nAccount Balance: ", u1.balance)
