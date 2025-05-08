@@ -16,7 +16,7 @@ class User:
             print(f"{amount} withdrawn.")
 
 
-u1 = User("A", 1 , 10000 )
+u1 = User("A", 1 , 10000 ) #use variables here instead of using a separate line for reach user, make it in order to add users based on the need from the output. See while loop, break and continue. 
 u2 = User("B", 2 , 20000 )
 u3 = User("C", 3 , 40000 )
 u4 = User("D", 4 , 50000 )
