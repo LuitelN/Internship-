@@ -11,11 +11,13 @@ def add_num(num1, num2):
 
 def difference_num(num1, num2):
     result = num1 - num2
-    print("The difference of two numbers is: ", result)
+    x = round(result, 4)
+    print("The difference of two numbers is: ", x)
 
 def multiply_num(num1, num2):
     result = num1 * num2 
-    print("The product of two numbers is: ", result)
+    x = round(result, 4)
+    print("The product of two numbers is: ", x)
 
 def remainder(num1, num2):
     result = num1 / num2 
