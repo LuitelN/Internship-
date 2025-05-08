@@ -21,7 +21,7 @@ def multiply_num(num1, num2):
 
 def remainder(num1, num2):
     result = num1 / num2 
-    x = round(result, 4)
+    x = round(result, 4) 
     print("The remainder is: ", x)
 
 if Operation == '+':
