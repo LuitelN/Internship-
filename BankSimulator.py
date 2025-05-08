@@ -4,6 +4,7 @@ class User:
         self.number = Account_Number
         self.balance = Balance 
 
+
     def deposit(self, amount):
         self.balance += amount
         print(f"{amount} deposited."
@@ -16,12 +17,12 @@ class User:
             print(f"{amount} withdrawn.")
 
 
-
 u1 = User("A", 1 , 10000 )
 u2 = User("B", 2 , 20000 )
 u3 = User("C", 3 , 40000 )
 u4 = User("D", 4 , 50000 )
 u5 = User("E", 5 , 15000 )
+
 
 accounts = {1: u1, 2: u2, 3: u3, 4: u4, 5: u5}
 
@@ -38,27 +39,32 @@ if user:
 
     if action == "deposit":
         amount = float(input("Enter the deposit amount: "))
-        user.deposit(amount)
+        u1.deposit(amount)
+        u2.deposit(amount)
+        u3.deposit(amount)
+        u4.deposit(amount)
+        u5.deposit(amount)
 
     elif action == "withdraw":
         amount = float(input("Enter the withdraw amount: "))
-        user.withdraw(amount)
+        u1.withdraw(amount)
+        u2.withdraw(amount)
+        u3.withdraw(amount)
+        u4.withdraw(amount)
+        u5.withdraw(amount)
 
-else:
-    print("Invalid Action")
+    else:
+      print("Invalid Action")
 
     print("\nUpdated Account Information:")
     print("Account Holder:", user.name, "\nAccount Number:", user.number, "\nAccount Balance:", user.balance)
 
+else:
+    print("User not found.")
 
 
 
-
-# print("Account Holder:", u1.name, "\nAccount Number:", u1.number, "\nAccount Balance: ", u1.balance)
-# print("Account Holder:", u2.name, "\nAccount Number:", u2.number, "\nAccount Balance: ", u2.balance)
-# print("Account Holder:", u3.name, "\nAccount Number:", u3.number, "\nAccount Balance: ", u3.balance)
-# print("Account Holder:", u4.name, "\nAccount Number:", u4.number, "\nAccount Balance: ", u4.balance)
-# print("Account Holder:", u5.name, "\nAccount Number:", u5.number, "\nAccount Balance: ", u5.balance)
+    print("Invalid account number.")
 
 
         
