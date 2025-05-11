@@ -44,7 +44,7 @@
 # School_Bus = Bus("Tata", "Marcopolo", 2022)
 # print(School_Bus.seating_capacity())
 
-## 5.  Define a property that must have the same value for every class instance (object)
+# 5.  Define a property that must have the same value for every class instance (object)
 
 # class Vehicle:
 
@@ -69,34 +69,34 @@
 
 ## 6. Create a Bus child class that inherits from the Vehicle class. The default fare charge for any vehicle is its seating capacity multiplied by 100 
 
-class Vehicle: 
-    def __init__(self, Company, Model, Year, Capacity):
-        self.Company = Company
-        self.Model = Model 
-        self.Year = Year 
-        self.capacity = Capacity
+# class Vehicle: 
+#     def __init__(self, Company, Model, Year, Capacity):
+#         self.Company = Company
+#         self.Model = Model 
+#         self.Year = Year 
+#         self.capacity = Capacity
 
-    def fare(self):
-        return self.capacity * 100 
+#     def fare(self):
+#         return self.capacity * 100 
 
-class Bus(Vehicle):
-    def fare(self):
-        amount = super().fare()
-        amount += amount * 10 / 100
-        return amount
+# class Bus(Vehicle):
+#     def fare(self):
+#         amount = super().fare()
+#         amount += amount * 10 / 100
+#         return amount
     
-School_Bus = Bus("Tata", "Marcopolo", 2022, 50)
-print("Total Bus Fare is:", School_Bus.fare())
+# School_Bus = Bus("Tata", "Marcopolo", 2022, 50)
+# print("Total Bus Fare is:", School_Bus.fare())
 
-# 7. Check Type of an Object 
-class Vehicle:
-    def __init__(self, name, mileage, capacity):
-        self.name = name
-        self.mileage = mileage
-        self.capacity = capacity
+# # 7. Check Type of an Object 
+# class Vehicle:
+#     def __init__(self, name, mileage, capacity):
+#         self.name = name
+#         self.mileage = mileage
+#         self.capacity = capacity
 
-class Bus(Vehicle):
-    pass
+# class Bus(Vehicle):
+#     pass
 
 # School_bus = Bus("School Volvo", 12, 50)
 
