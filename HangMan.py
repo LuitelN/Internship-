@@ -70,14 +70,15 @@ def hangman():
     chosen_word = get_word()
     
     display = []
-    for _ in chosen_word: #In the chosen word, adds the blank spaces to put the letters 
-        display += "_"
+    # why using underscore
+    for b in chosen_word: #In the chosen word, adds the blank spaces to put the letters 
+        display += "a"
     
     end_of_loop = False #Boolean
     lives = 7
 
     print("\nWelcome to Hangman\n")
-    print("Guess the word:- ", end=" ") 
+    print("Guess the word:-      ", end=" ") 
     print(f"{' '.join(display)}")
     print(f"Lives: {lives}")
 
@@ -105,6 +106,7 @@ def hangman():
             end_of_loop = True
 
 end_of_game = False
+
 while not end_of_game: #true
     ask = input("Do you want to play Hangman? (y/n): ").lower()
     # import pdb;pdb.set_trace()

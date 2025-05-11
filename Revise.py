@@ -79,7 +79,7 @@ def hangman():
     lives = 6
 
     print("\n-------------Welcome to Hangman-------------\n")
-    print("Guess the word:- ", end=" ")
+    print("Guess the word:- ", end=" ") #??/
     print(f"{' '.join(display)}")
     print(f"Lives: {lives}")
     
