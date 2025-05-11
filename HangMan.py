@@ -53,18 +53,11 @@ stages = ['''
       |
       |
 =========
-''', 
-'''  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========''']
+''']
 
 import random 
 import csv 
-import pandas as pd
+# import pandas as pd ###to be used later when the words data is improved.(remove the words consisting of letters less than 3)
 
 def get_word():
     with open("Words.csv") as f:
@@ -92,8 +85,8 @@ def hangman():
         guess = input("Guess a Letter: ").lower()
         if not (guess in chosen_word):
             lives -= 1
-        index = 0 #?????
-        for c in chosen_word: 
+        index = 0 #yo point bata start garera word check garne 
+        for c in chosen_word: #c-> character 
             if c == guess:
                 display[index] = guess
             index += 1
