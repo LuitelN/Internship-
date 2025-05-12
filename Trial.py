@@ -1,5 +1,32 @@
-txt = "Thank you for the music\nWelcome to the jungle\nFunnythings ahaahahahahaha"
+# # A simple decorator function
+# def decorator(func):
+  
+#     def wrapper():
+#         print("Before calling the function.")
+#         func()
+#         print("After calling the function.")
+#         #greet()
+#     return wrapper
 
-x = txt.splitlines()
+# # Applying the decorator to a function
+# @decorator
 
-print(x)
+# def greet():
+#     print("Hello, World!")
+
+# greet()
+
+n = int(input().strip())
+if n%2 != 0:
+    print("Weird")
+
+elif n%2 == 0 & 2<= n <= 5:
+    print("Not Weird")
+
+elif n%2 ==0 & 2<= n <= 5:
+    print("Weird")
+
+else: 
+    n%2 == 0 & n > 20
+    print("Not Weird")
+
